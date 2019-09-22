@@ -1,5 +1,9 @@
 #include <stdio.h>
-int main(){
-    int a=5;
-    printf("%d\n",&a);
+
+int main ()
+{
+
+   char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+   printf("Greeting message: %s\n", greeting );
 }
+/*TESTING */
