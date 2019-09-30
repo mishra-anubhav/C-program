@@ -20,5 +20,5 @@ int main()
       ptr++;
    }
 
-   printf("\nThe sum is: %d",sum);
+   printf("\nThe sum is: %d\n",sum);
 }
