@@ -18,4 +18,4 @@ int main()
    }
    printf("\nThe sum is: %d",sum);
 }
-//Under construction
+//Under constructio
