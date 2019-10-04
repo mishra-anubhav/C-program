@@ -14,7 +14,7 @@ int main(void) {
   printf("Enter the length of the array\n");
   scanf("%d", &len);
   printf("Enter the array elements\n");
-  for (i=0; i<len; i++)
+  for (i=0; i<len; i++
     scanf("%d", &a[i]);
   printf("Enter the element to search\n");
   scanf("%d", &search_item);

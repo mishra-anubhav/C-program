@@ -1,21 +1,32 @@
 #include<stdio.h>
-int main()
+void main()
 {
-   char array[5];
-   int i,sum=0;
-   char *ptr;
-
-   printf("\nEnter array elements (5 strings):");
-   for(i=0;i<5;i++)
-      scanf("%s",&array[i]);
-
-   /* array is equal to base address
-    * array = &array[0] */
-   ptr = array;
-
-   for(i=0;i<5;i++){
-        printf("%s",array[i]);
-   }
-   printf("\nThe sum is: %d",sum);
+    char *T;
+    int I,J,K;
+    char *ARRAY[5]={“SUNIL”,”ANIL”,”DILIP”,”JAY”,”BHARAT”};
+    clrscr();
+    for(I=0;I<5;I++)
+    {
+       printf(“%s \t”,ARRAY[I]);
+    }
+    printf(“\n”);
+    for(I=0;I<4;I++)
+    {
+      for(J=0;J<4-I;J++)
+      {
+ K=strcmp(ARRAY[J],ARRAY[J+1]);
+ if(K>0)
+ {
+   T=ARRAY[J];
+   ARRAY[J]=ARRAY[J+1];
+   ARRAY[J+1]=T;
+ }
+      }
+    }
+    for(I=0;I<5;I++)
+    {
+       printf(“%s \t”,ARRAY[I]);
+    }
+getch();
 }
-//Under constructio
+
